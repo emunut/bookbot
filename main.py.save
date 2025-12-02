@@ -1,0 +1,59 @@
+# main.py
+from stats import get_num_words
+# main.py
+
+from stats import count_characters, word_count # Assuming word_count is also in stats.py
+
+# ... (Previous code to read book_text)
+
+# Example: Assuming 'book_text' holds the content of the book
+# Replace this with your actual book text retrieval
+book_text = "This is some sample text from the book, with various characters and symbols!"
+
+# Call the word_count function (if applicable)
+words = book_text.split()
+word_count_result = word_count(words) # Assuming word_count function exists and takes a list of words
+
+# Print the word count
+print(f"Word count: {word_count_result}")
+
+# Call the new count_characters function
+char_counts_result = count_characters(book_text)
+
+# Print the dictionary of characters and their counts
+print("Character counts:")
+print(char_counts_result)
+def main():
+    book_path = "books/frankenstein.txt" # Assuming a book file exists
+    with open(book_path) as f:
+        file_contents = f.read()
+
+    num_words = get_num_words(file_contents)
+    print(f"Found {num_words} total words")
+
+if __name__ == "__main__":
+
+# main.py
+
+from stats import count_characters, word_count # Assuming word_count is also in stats.py
+
+# ... (Previous code to read book_text)
+
+# Example: Assuming 'book_text' holds the content of the book
+# Replace this with your actual book text retrieval
+book_text = "This is some sample text from the book, with various characters and symbols!"
+
+# Call the word_count function (if applicable)
+words = book_text.split()
+word_count_result = word_count(words) # Assuming word_count function exists and takes a list of words
+
+# Print the word count
+print(f"Word count: {word_count_result}")
+
+# Call the new count_characters function
+char_counts_result = count_characters(book_text)
+
+# Print the dictionary of characters and their counts
+print("Character counts:")
+print(char_counts_result)
+    main()
